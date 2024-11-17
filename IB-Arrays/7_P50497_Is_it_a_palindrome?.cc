@@ -4,7 +4,7 @@
   * Grado en Ingeniería Informática
   * Informática Básica
   * 
-  * @file P50497.cc
+  * @file 7_Is_it_a_palindrome?.cc
   * @date 11 Nov 2024
   * @brief This is a program that decides if a word is palindrome or not
   * @bug No known bugs

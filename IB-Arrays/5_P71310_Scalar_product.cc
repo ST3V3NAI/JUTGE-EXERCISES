@@ -4,25 +4,35 @@
   * Grado en Ingeniería Informática
   * Informática Básica
   * 
-  * @file P71310.cc
+  * @file 5_P71310_Scalar_product.cc
   * @date 11 Nov 2024
   * @brief This is a program prints the scalar product of two vectors
   * @bug No known bugs
   * @see https://jutge.org/problems/P71310_en
 */
+
 #include <iostream>
 #include <vector>
+
 double scalar_product(const std::vector<double>& u, const std::vector<double>& v) {
-  double result{0.0};
-  for (int i{0}; i < u.size(); i++) {
-    result += u[i] * v[i];
-  }
-  return result;
+    double result = 0.0;
+    size_t size = u.size();
+
+    for (size_t i = 0; i < size; i++) {
+        result += u[i] * v[i];
+    }
+
+    return result;
 }
 
 int main() {
-  std::vector<double> u{0.0, 0.0, 0.0};
-  std::vector<double> v{0.0, 0.0, 0.0};
-  std::cin >> u[0] >> u[1] >> u[2] >> v[0] >> v[1] >> v[2];
-  std::cout << scalar_product(u, v) << std::endl;
+    // Example usage
+    std::vector<double> u = {1.0, 2.0, 3.0};
+    std::vector<double> v = {4.0, 5.0, 6.0};
+
+    double result = scalar_product(u, v);
+
+    std::cout << "Scalar product: " << result << std::endl;
+
+    return 0;
 }

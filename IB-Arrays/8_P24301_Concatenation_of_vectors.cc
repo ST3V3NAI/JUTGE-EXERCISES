@@ -4,7 +4,7 @@
   * Grado en Ingeniería Informática
   * Informática Básica
   * 
-  * @file P24301.cc
+  * @file 8_P24301_Concatenation_of_vectors.cc
   * @date 11 Nov 2024
   * @brief This is a program that concatenates two vectors
   * @bug No known bugs

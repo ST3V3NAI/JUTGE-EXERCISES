@@ -10,8 +10,10 @@
   * @bug No known bugs
   * @see https://jutge.org/problems/P11725_en
 */
+
 #include <iostream>
 #include <vector>
+
 bool exists(int x, const std::vector<int>& v) {
   int n = v.size();
   for (int i{0}; i < n; i++) {

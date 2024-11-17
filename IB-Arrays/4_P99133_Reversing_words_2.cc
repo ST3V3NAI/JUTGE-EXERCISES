@@ -11,22 +11,24 @@
   * @bug There are no known bugs
   * @see https://jutge.org/problems/P99133_en
   */ 
+ 
 #include <iostream>
 #include <algorithm>
 #include <vector>
 
-void reverseStrings(std::string& str) {
-  reverse(str.begin(), str.end());
+void reverseStrings(std::string& frase) {
+  reverse(frase.begin(), frase.end());
 }
 
 int main() {
-  int n;
-  std::cin >> n;
-  std::vector<std::string> strings(n);
-  for (int i = 0; i < n; i++) {
+  int number_of_strings;
+  std::cin >> number_of_strings;
+  std::vector<std::string> strings(number_of_strings);
+
+  for (int i = 0; i < number_of_strings; i++) {
     std::cin >> strings[i];
   }
-  for (int i = n - 1; i >= 0; i--) {
+  for (int i = number_of_strings - 1; i >= 0; i--) {
     reverseStrings(strings[i]);
     std::cout << strings[i] << std::endl;
   }
