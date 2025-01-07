@@ -14,6 +14,7 @@
 
 #include <iostream>
 #include <cmath>
+
 int absolute(int n) {
   int value = abs(n);
   return value;
